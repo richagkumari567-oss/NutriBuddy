@@ -1175,7 +1175,7 @@ async function analyzeFood() {
     const foodNames = FOOD_DATABASE.map(food => food.name);
     formData.append('food_database', JSON.stringify(foodNames));
 
-    const backendResponse = await fetch('http://127.0.0.1:5000/analyze-food', {
+    const backendResponse = await fetch('https://nutri-buddy-backend.vercel.app/analyze-food', {
       method: 'POST',
       body: formData
     });
