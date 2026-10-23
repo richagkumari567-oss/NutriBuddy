@@ -441,7 +441,6 @@ Example:
             # -------------------------------------------------
             # Ensure Gemini selected a database food
             # -------------------------------------------------
-
             selected_name = str(name).strip()
 
             exact_match = None
